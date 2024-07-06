@@ -32,17 +32,10 @@ local OutputLabel = Section:NewLabel("")
          end
 
          _G.CheckKey = true
-
-         if game.PlaceId == 4483381587 then
             local script = loadstring(game:HttpGet('https://raw.githubusercontent.com/FishyPlayzThis/Roblox-Cheat-V1/main/Main.lua'))()
             if script then
                script()
             else
                OutputLabel:UpdateLabel("Failed To Load")
             end
-         else
-         OutputLabel:UpdateLabel("Unsupported Game")
-
       end
-   
-   end
